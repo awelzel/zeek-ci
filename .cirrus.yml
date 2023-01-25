@@ -27,7 +27,7 @@ resources_template: &RESOURCES_TEMPLATE
 # Skip this task on PR's
 skip_task_on_pr: &SKIP_TASK_ON_PR
   skip: >
-    ($CIRRUS_PR != '' && $CIRRUS_PR_LABELS !=~ '.*full ci.*')
+    ($CIRRUS_PR != '' && $CIRRUS_PR_LABELS !=~ '.*fullci.*')
 
 ci_template: &CI_TEMPLATE
   # Default timeout is 60 minutes, Cirrus hard limit is 120 minutes for free
