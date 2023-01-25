@@ -5,7 +5,7 @@
 # at https://github.com/zeek/zeek/wiki/Zeek-Operating-System-Support-Matrix      #
 ##################################################################################
 
-cpus: &CPUS 4
+cpus: &CPUS 1
 btest_jobs: &BTEST_JOBS 4
 btest_retries: &BTEST_RETRIES 2
 memory: &MEMORY 12GB
