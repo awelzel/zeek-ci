@@ -66,7 +66,7 @@ picky_fedora36_task:
     << : *RESOURCES_TEMPLATE
   << : *CI_TEMPLATE
   skip: >
-    ($CIRRUS_PR != '' && ($CIRRUS_CHANGE_MESSAGE !=~ '.*[fullci].*')
+    ($CIRRUS_PR != '' && ($CIRRUS_CHANGE_MESSAGE !=~ '.*[fullci].*'))
 
 fedora37_task:
   container:
