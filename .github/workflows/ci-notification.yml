@@ -11,7 +11,7 @@ jobs:
         run: env && (test -f "$GITHUB_EVENT_PATH" && cat "$GITHUB_EVENT_PATH")
 
       - name: Send CI Email Notification
-        uses: awelzel/ci-email-action@master
+        uses: awelzel/ci-email-action@topic/awelzel/add-skip-conclusions-env
         env:
           CI_APP_NAME: "Cirrus CI"
           BRANCH_WHITELIST: "master|release/.*"
