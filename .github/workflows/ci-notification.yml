@@ -4,9 +4,12 @@ on:
     types: [completed]
 jobs:
   notify:
-    if: github.repository == 'zeek/zeek'
+    if: github.repository == 'awelzel/zeek-ci'
     runs-on: ubuntu-latest
     steps:
+      - name: Show env
+        run: env && (test -f "$GITHUB_EVENT_PATH" && cat "$GITHUB_EVENT_PATH")
+
       - name: Send CI Email Notification
         uses: zeek/ci-email-action@master
         env:
